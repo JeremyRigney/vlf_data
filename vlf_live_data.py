@@ -2,16 +2,13 @@
 import matplotlib.pyplot as plt
 from matplotlib import dates
 import matplotlib.dates as mdates
-from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
 from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
-import os
 import json
 import requests
-from tqdm import tqdm
 import scipy as sp
 from scipy import signal
 
