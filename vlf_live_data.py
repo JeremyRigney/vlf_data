@@ -248,7 +248,7 @@ def plot_live_vlf(receiver, transmitter, date, daterange):
     ax[1].set_xlabel(str(vlf_time[0].strftime("%d/%m/%Y"))+ ' [UTC]',fontsize=14)
     ax[1].set_ylabel('VLF Signal [dB]', fontsize=14)
     
-    ax[1].set_yticks([85, 90, 95, 100, 105, 110, 115])
+    ax[1].set_yticks(np.arange(30, 115, 5))
     
     
     ax[1].set_xlim(vlf_time[0], vlf_time[0]+timedelta(days=daterange))
